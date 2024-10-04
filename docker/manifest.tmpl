@@ -7,12 +7,12 @@ tags:
 {{/if}}
 manifests:
   -
-    image: architmallik/httprequest:{{#if build.tag}}{{trimPrefix "v" build.tag}}-{{/if}}linux-amd64
+    image: architmallik/httprequest:{{#if build.tag}}{{trimPrefix "v" build.tag}}-{{/if}}preview-linux-amd64
     platform:
       architecture: amd64
       os: linux
   -
-    image: architmallik/httprequest:{{#if build.tag}}{{trimPrefix "v" build.tag}}-{{/if}}linux-arm64
+    image: architmallik/httprequest:{{#if build.tag}}{{trimPrefix "v" build.tag}}-{{/if}}preview-linux-arm64
     platform:
       variant: v8
       architecture: arm64
